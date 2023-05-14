@@ -3,17 +3,44 @@
 
 A comedic twist to BLuFeNiX's SMT Shell (https://github.com/BLuFeNiX/SMTShell/)
 
-Fully adapted with new **bypass** to combat Samsung's One UI 5.1 PATCH that was introduced in Feb.
-
-But now dead on any firmware with a security patch of May 1, 2023, due to the framework changes AOSP made recently. 
-(https://https://android.googlesource.com/platform/frameworks/base/+/33940a9749666eec991904094ccf56ae4ca4ae10/)
-
+Fully adapted and updated with new *bypass* to combat Samsung's One UI 5.1 PATCH for downgrading "SMT" that was introduced in February.
 
 <div align="center">
     <img src="screenshots/ss1.png" width="20%" />
     <img src="screenshots/ss2.png" width="20%" /> 
     <img src="screenshots/ss3.png" width="40%" /> 
 </div>
+
+But now dead on any firmware with a security patch of May 1, 2023, due to the framework changes AOSP
+made most recently. (https://android.googlesource.com/platform/frameworks/base/+/33940a9749666eec991904094ccf56ae4ca4ae10)
+      
+
+
+ ##   CREDITS
+
+#### APP & API
+     BLuFeNiX (https://github.com/BLuFeNiX/) 
+     SMT SHELL (https://github.com/BLuFeNiX/SMTShell/)
+     SMT SHELL API (https://github.com/BLuFeNiX/SMTShell-API/)
+    
+    
+ *Thanks for the challenge, still dont know what im doing, but I'm getting there.*
+ *Appreciate your time and patience*
+
+
+### *NEW* Method for *Bypassing* One UI 5.1 Patch
+     New bypass was made possible by the intense research and dedication of one person and that is
+     K0mRaid3! (https://twitter.com/k0mraid3). FULL CREDIT goes to him and on his discovery for bypassing 
+     the ASKSManager and introducing a new tool/arg, to help in the fight with Samsung.
+     
+     BYPASS METHOD discovered by K0mRaiD for Samsung Devices that have a security patch of APRIL 1, 2023 or earlier 
+               (THIS DOES NOT COUNT FOR WATCHES, KOREAN OR INDIAN VARIANT DEVICES!)
+     
+        "   pm install -d -i "com.sec.android.preloadinstaller" /path/to/vuln/SMT   "
+   
+
+
+
 
 
 
