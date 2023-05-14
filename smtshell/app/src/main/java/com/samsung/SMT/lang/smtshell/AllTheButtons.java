@@ -27,7 +27,7 @@ public class AllTheButtons extends AppCompatActivity {
 
     ArrayList<SMTCapability> list = new ArrayList<>(Arrays.asList(
             new SMTCapability(
-                    "Kill #system_shell_2# API",
+                    "Kill #system_shell_2#'s API",
                     "SHOTS FIRED! SYSTEM is down...SYSTEM is down. RIP MAY 2023.",
                     "Kill", v -> {
                 InternalAPI.killAPI(this, success -> {
@@ -83,6 +83,12 @@ public class AllTheButtons extends AppCompatActivity {
                 SMTShellAPI.executeCommand(this, "am start -n com.sec.hiddenmenu/.IOTHiddenMenu -e 7267864872 72678647376477466");
             }),
             new SMTCapability(
+                    "5G Tile Service in Quick Settings",
+                    null,
+                    "Launch", v -> {
+                SMTShellAPI.executeCommand(this, "am start -n com.samsung.android.app.telephonyui/.carrierui.tile.TurnOn5gTileService");
+            }),           
+            new SMTCapability(
                     "DSU Loader",
                     "FAKE ROM........You have!.",
                     "Launch", v -> {
@@ -91,7 +97,7 @@ public class AllTheButtons extends AppCompatActivity {
             new SMTCapability(
                     "Spank Me Daddy!!! Ive been BAD.",
                     "Spawns a notification in the system tray that allows a selected DSU to be discarded.",
-                    "Launch", v -> {
+                    "Spank Me", v -> {
                 SMTShellAPI.executeCommand(this, "am start -n com.android.dynsystem/.VerificationActivity");
             })
     ));
