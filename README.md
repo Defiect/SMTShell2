@@ -1,14 +1,21 @@
-# SMTShell
+#      #system_shell_2#
 
-This tool allows most Samsung devices to achieve a `system` shell (UID 1000). It was patched in OneUI 5.1, but will work on Android 13 running OneUI 5.0 or older. It should work as far back and Android 9.0 (and maybe earlier).
 
-It also acts similar to Magisk or SuperSU, allowing apps to easily execute `system` commands via [SMTShell-API](https://github.com/BLuFeNiX/SMTShell-API/).
+A comedic twist to BLuFeNiX's SMT Shell (https://github.com/BLuFeNiX/SMTShell/)
+
+Fully adapted with new **bypass** to combat Samsung's One UI 5.1 PATCH that was introduced in Feb.
+
+But now dead on any firmware with a security patch of May 1, 2023, due to the framework changes AOSP made recently. 
+(https://https://android.googlesource.com/platform/frameworks/base/+/33940a9749666eec991904094ccf56ae4ca4ae10/)
+
 
 <div align="center">
-    <img src="screenshots/01.png" width="30%" />
-    <img src="screenshots/02.png" width="30%" /> 
-    <img src="screenshots/03.png" width="30%" /> 
+    <img src="screenshots/ss1.png" width="20%" />
+    <img src="screenshots/ss2.png" width="20%" /> 
+    <img src="screenshots/ss3.png" width="40%" /> 
 </div>
+
+
 
 ## Usage (with Shizuku)
 
