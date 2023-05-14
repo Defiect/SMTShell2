@@ -27,63 +27,69 @@ public class AllTheButtons extends AppCompatActivity {
 
     ArrayList<SMTCapability> list = new ArrayList<>(Arrays.asList(
             new SMTCapability(
-                    "Kill SMT Shell API",
-                    "Clears application data for com.samsung.SMT, disabling all payloads and allowing the exploit to run again.",
+                    "Kill #system_shell_2# API",
+                    "SHOTS FIRED! SYSTEM is down...SYSTEM is down. RIP MAY 2023.",
                     "Kill", v -> {
                 InternalAPI.killAPI(this, success -> {
                     ActivityUtils.launchNewTask(this, MainActivity.class);
                 });
             }),
             new SMTCapability(
-                    "Local System Shell",
-                    "Connect to a system shell directly in the app!",
+                    "#system_shell_2# Terminal",
+                    "For the lazy people, who dont want that PC life...like ME!",
                     "Launch", v -> {
                 ActivityUtils.launch(AllTheButtons.this, ShellActivity.class);
             }),
             new SMTCapability(
-                    "Reverse Shell",
-                    "Start a reverse shell that can be connected to via:\n adb shell nc -l -p 9999",
+                    "For the NERDS, who want that PC life"
+                    "NC LYFE 4Ever....nc -l -p 9999",
                     "Launch", v -> {
                 SMTShellAPI.loadLibrary(this, getApplicationInfo().nativeLibraryDir + "/" + "libsmtshell.so");
             }),
             new SMTCapability(
-                    "Band Selection",
+                    "Bands Will Make Her Dance",
                     null,
                     "Launch", v -> {
                 SMTShellAPI.executeCommand(this, "am start com.samsung.android.app.telephonyui/.hiddennetworksetting.MainActivity");
             }),
             new SMTCapability(
-                    "Band Selection (Advanced)",
-                    null,
+                    "Bands Will Make Her Dance #2)",
+                    "After hours edition,
                     "Launch", v -> {
                 SMTShellAPI.executeCommand(this, "am broadcast -a com.samsung.android.action.SECRET_CODE -d android_secret_code://2263 -n com.sec.android.RilServiceModeApp/.SecKeyStringBroadcastReceiver");
             }),
             new SMTCapability(
-                    "Change CSC",
+                    "Cave of Wonders - CSC boys!",
                     null,
                     "Launch", v -> {
                 SMTShellAPI.executeCommand(this, "am start -n com.samsung.android.cidmanager/.modules.preconfig.PreconfigActivity -a com.samsung.android.action.SECRET_CODE -d secret_code://27262826 --ei type 2");
             }),
             new SMTCapability(
-                    "Service Menu",
-                    null,
+                    "Pandora's Box",
+                    "If you come inside, dont cry when you break something...do it at XDA",
                     "Launch", v -> {
                 SMTShellAPI.executeCommand(this, "am broadcast -a com.samsung.android.action.SECRET_CODE -d android_secret_code://27663368378 -n com.sec.android.RilServiceModeApp/.SecKeyStringBroadcastReceiver");
             }),
             new SMTCapability(
                     "Info Menu",
-                    null,
+                    "Info? What info...I AINT NO SNITCH!",
                     "Launch", v -> {
                 SMTShellAPI.executeCommand(this, "am broadcast -a com.samsung.android.action.SECRET_CODE -d android_secret_code://0011 -n com.sec.android.RilServiceModeApp/.SecKeyStringBroadcastReceiver");
             }),
             new SMTCapability(
-                    "DSU Loader",
-                    null,
+                    "IOTHiddenMenu",
+                    "Enter the Master Menu of IOTHiddenMenu",
                     "Launch", v -> {
-                SMTShellAPI.executeCommand(this, "am start -n com.android.settings/.development.DSULoader");
+                SMTShellAPI.executeCommand(this, "am start -n com.sec.hiddenmenu/.IOTHiddenMenu -e 7267864872 72678647376477466");
             }),
             new SMTCapability(
-                    "Spawn DSU Notification",
+                    "DSU Loader",
+                    "FAKE ROM........You have!.",
+                    "Launch", v -> {
+                SMTShellAPI.executeCommand(this, "am start -n com.android.settings/.development.DSULoader");
+            }},
+            new SMTCapability(
+                    "Spank Me Daddy!!! Ive been BAD.",
                     "Spawns a notification in the system tray that allows a selected DSU to be discarded.",
                     "Launch", v -> {
                 SMTShellAPI.executeCommand(this, "am start -n com.android.dynsystem/.VerificationActivity");
