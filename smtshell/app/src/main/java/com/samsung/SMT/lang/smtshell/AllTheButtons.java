@@ -41,7 +41,7 @@ public class AllTheButtons extends AppCompatActivity {
                 ActivityUtils.launch(AllTheButtons.this, ShellActivity.class);
             }),
             new SMTCapability(
-                    "For the NERDS, who want that PC life"
+                    "For the NERDS, who want that PC life",
                     "NC LYFE 4Ever....nc -l -p 9999",
                     "Launch", v -> {
                 SMTShellAPI.loadLibrary(this, getApplicationInfo().nativeLibraryDir + "/" + "libsmtshell.so");
@@ -54,7 +54,7 @@ public class AllTheButtons extends AppCompatActivity {
             }),
             new SMTCapability(
                     "Bands Will Make Her Dance #2)",
-                    "After hours edition,
+                    "After hours edition",
                     "Launch", v -> {
                 SMTShellAPI.executeCommand(this, "am broadcast -a com.samsung.android.action.SECRET_CODE -d android_secret_code://2263 -n com.sec.android.RilServiceModeApp/.SecKeyStringBroadcastReceiver");
             }),
@@ -93,7 +93,7 @@ public class AllTheButtons extends AppCompatActivity {
                     "FAKE ROM........You have!.",
                     "Launch", v -> {
                 SMTShellAPI.executeCommand(this, "am start -n com.android.settings/.development.DSULoader");
-            }},
+            }),
             new SMTCapability(
                     "Spank Me Daddy!!! Ive been BAD.",
                     "Spawns a notification in the system tray that allows a selected DSU to be discarded.",
